@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Tytuł strony
+    </title>
+    <script>
+      function draw(){
+        var canvas = document.getElementById('wykres');
+        var ctx = canvas.getContext('2d');
+        ctx.fillText("Witaj Świecie", 10, 50); //Wykreślenie podanego tekstu na płótnie
+        
+        ctx.fillStyle = 'green';
+        ctx.fillRect(100,100,100,200);
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'pink';
+        ctx.strokeRect(100,100,100,200);
+
+        ctx.beginPath();
+        ctx.moveTo(250,100);
+        ctx.lineTo(250,200);
+        ctx.lineTo(350,150);
+        ctx.lineTo(250,100);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'red';
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(400,300,80,0,2*Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'brown';
+        ctx.stroke();
+      }
+    </script>
+  </head>
+  <body onload="draw();">
+    <main>
+      <h1>
+        Płótno, po którym można rysować, używając JavaScript
+      </h1>
+ 
+      <canvas id="wykres"
+              width="800"
+              height="600"
+              style="border:1px solid #000000;">
+        Wygląda na to, że twoja przeglądarka nie obsługuje elementu "canvas"
+      </canvas>
+    </main>
+  </body>
+</html>
