@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8" />
+	  <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+	  <script type="text/javascript" src="skrypt.js"></script>
+	  <title></title>
+	</head>
+	<body>
+		<form id="input">
+			Client: <input type="text" name="client"> <br>
+			Product name: <input type="text" name="productname"> <br>
+			Price: <input type="text" name="price"> <br>
+			Amount: <input type="text" name="amount"> <br>
+			Month: <input type="text" name="month"> <br> <br>
+			<input type="button" onclick="parseArguments()" value="Submit"> <br> <br>
+			<input type="button" onclick="deleteArguments()" value="Delete"> <br> <br>
+			<input type="button" onclick="modifyArguments()" value="Modify"> <br> <br>
+			History: <input type="text" name="history"> <br> <br>
+			<input type="button" onclick="showHistory()" value="History"> <br> <br>
+			<input type="button" onclick="showTopClients()" value="TopClients"> <br> <br>
+			Graph: <input type="text" name="graph"> <br> <br>
+			<input type="button" onclick="drawGraph()" value="DrawGraph"> <br>
+			<canvas id="wykres"
+            	width="1000"
+            	height="600"
+            	style="border:1px solid #000000;">
+      		</canvas>
+		</form>
+	</body>
+</html>
