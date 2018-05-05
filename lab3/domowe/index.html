@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        Nazwisko: <input type="text" name="nazwisko" id="nazwisko"> <br> Ilosc kwadratow: <input type="text" name="kwadraty" id="kwadraty"> <br> Predkosc kola w px: <input type="text" name="kolo" id="kolo"> <br> Predkosc licznika w s: <input type="text"
+            name="licznik" id="licznik"> <br>
+        <input type="button" onclick="run()" value="Start a game" id="button"><br>
+    </form>
+    <table id="aktualnyWynik">
+        <tr>
+            <th>Aktualne punkty</th>
+            <th>Etap</th>
+            <th>Czas do konca etapu</th>
+        </tr>
+        <tr>
+            <th><span id="punkty">0</span></th>
+            <th><span id="etap">0</span></th>
+            <th><span id="czas">0</span></th>
+        </tr>
+    </table>
+    <table id="topWyniki">
+        <tr>
+            <th>Nazwisko</th>
+            <th>Liczba punktow</th>
+        </tr>
+        <tr>
+            <th><span id="name1"></span></th>
+            <th><span id="top1"></span></th>
+        </tr>
+        <tr>
+            <th><span id="name2"></span></th>
+            <th><span id="top2"></span></th>
+        </tr>
+        <tr>
+            <th><span id="name3"></span></th>
+            <th><span id="top3"></span></th>
+        </tr>
+    </table>
+    <canvas id="plansza" width="1500" height="700">
+    </canvas>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
