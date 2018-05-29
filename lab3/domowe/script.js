@@ -138,14 +138,14 @@ function draw() {
             x += ballDelta;
         }
     }
-    if (leftPressed) { //tu przy wcisnieciu 3 sie cos psuje
+    if (leftPressed) {
         if (x - ballDelta < 0) {
             x = canvas.width;
         } else {
             x -= ballDelta;
         }
     }
-    if (upPressed) { //tu rowniez przy wcisnieciu 3 sie cos psuje
+    if (upPressed) {
         if (y - ballDelta < 0) {
             y = canvas.height;
         } else {
