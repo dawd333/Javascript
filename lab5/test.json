@@ -1,0 +1,21 @@
+{  
+  "name":"app3-operations",
+  "ops":[  
+     {  
+        "type":"add",
+        "args":[3,7,5]
+     },
+     {  
+        "type":"sub",
+        "args":[10,2,5]
+     },
+     {  
+        "type":"mul",
+        "args":[2,3,3]
+     },
+     {  
+        "type":"div",
+        "args":[10,2,5]
+     }
+  ]
+}
